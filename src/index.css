@@ -1,0 +1,36 @@
+/* --- Fonts --- */
+@font-face {
+    font-family: 'montextralight';
+    src: url('./src/fonts/mont-extralightdemo-webfont.woff2') format('woff2'),
+         url('./src/fonts/mont-extralightdemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montheavy';
+    src: url('./src/fonts/mont-heavydemo-webfont.woff2') format('woff2'),
+         url('./src/fonts/mont-heavydemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: slategrey;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
+}
+.container{
+    font-family: 'montheavy';
+    padding: 15px 0 15px 5%;
+}
