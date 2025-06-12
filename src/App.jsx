@@ -1,11 +1,9 @@
 import React from 'react'
-import Navbar from './components/navbar/navbar'
+import Lavalamp from './components/lavalamp/lavalamp'
 
 const App = () => {
   return (
-    <div>
-      <Navbar/>
-    </div>
+    <Lavalamp/>
   )
 }
 

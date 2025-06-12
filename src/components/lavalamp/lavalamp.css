@@ -1,0 +1,135 @@
+/*
+Built off of baseline by Pedro Andre: https://codepen.io/pedroo-andre/pen/VwyoZYz
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #000;
+	min-height: 100vh;
+    min-width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.frame {
+	width:100%;
+    height:100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Body Lamp */
+.body-lamp {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: radial-gradient(#001122, #00ffff35);
+	overflow: hidden;
+}
+
+/* Base Lamp / Top */
+.base-lamp {
+	position: relative;
+	width: 245px;
+	height: 100px;
+	bottom: 70px;
+}
+
+
+/* Gooey Wrapper*/
+.gooey {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #00000070;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	filter: blur(15px) contrast(30);
+}
+
+/* Bubble */
+.bubble {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background: #00ffff;
+	animation: move 14s ease-in-out infinite alternate;
+}
+
+.bubble:nth-child(1) {
+	top: 50px;
+	left: 10px;
+}
+
+.bubble:nth-child(2) {
+	width: 50px;
+	height: 30px;
+	left: 50px;
+	animation-delay: -2s;
+}
+
+.bubble:nth-child(3) {
+	width: 70px;
+	height: 70px;
+	left: -70px;
+	animation-delay: -3.5s;
+}
+
+.bubble:nth-child(4) {
+    position: absolute;
+	left: 0px;
+	width: 100%;
+	top: 0;
+    height: 35px;
+	animation: none;
+}
+
+.bubble:nth-child(5) {
+	position: absolute;
+	width: 100%;
+    bottom: 0;
+    height: 35px;
+	animation: none;
+}
+
+@keyframes move {
+	0% {
+		border-radius: 75% 25% 20% 80% / 34% 47% 53% 66%;
+		transform: translateY(-60vh);
+	}
+
+	100% {
+		border-radius: 50%;
+		transform: translateY(50vh);
+	}
+}
+
+/* Glow BG */
+.glow {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	background: #5555ff70;
+	filter: blur(100px);
+	border-radius: 50%;
+}
+
+.glow::after {
+	content: '';
+	position: absolute;
+	bottom: -80px;
+	width: 350px;
+	height: 90px;
+	background: #5555ff;
+	filter: blur(5px);
+	border-radius: 50%;
+}
