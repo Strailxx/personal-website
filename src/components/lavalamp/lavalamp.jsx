@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './lavalamp.css'
 
 const lavalamp = () => {
@@ -6,8 +6,14 @@ const lavalamp = () => {
     <div>
       <div class="glow"></div>
       <div class="frame">
-        <div class="body-lamp">
+        <div class="container">
           <div class="gooey">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
             <div class="bubble"></div>
             <div class="bubble"></div>
             <div class="bubble"></div>
@@ -15,7 +21,6 @@ const lavalamp = () => {
             <div class="bubble"></div>
           </div>
         </div>
-        <div class="base-lamp"></div>
       </div>
     </div>
 
