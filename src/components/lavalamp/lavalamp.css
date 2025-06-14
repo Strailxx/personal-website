@@ -82,60 +82,167 @@ body {
     height: 15px;
 }
 
-.bubble:nth-child(1){
-    top: 50px;
-	left: 10px;
+#wrap1{
+    .bubble:nth-child(1){
+        top: 50px;
+        left: 10px;
+    }
+
+    .bubble:nth-child(2){
+        width: 50px;
+        height: 30px;
+        left: 50px;
+        animation-delay: -2s;
+    }
+
+    .bubble:nth-child(3){
+        width: 70px;
+        height: 70px;
+        left: -70px;
+        animation-delay: -3.5s;
+    }
+    .bubble:nth-child(4){
+        width: 40px;
+        height: 40px;
+        left: -50px;
+        animation-delay: -5s;
+    }
 }
 
-.bubble:nth-child(2){
-    width: 50px;
-	height: 30px;
-	left: 50px;
-	animation-delay: -2s;
+#wrap2{
+    .bubble:nth-child(1){
+        top: 50px;
+        left: 10px;
+    }
+
+    .bubble:nth-child(2){
+        width: 50px;
+        height: 30px;
+        left: 50px;
+        animation-delay: -2s;
+    }
+
+    .bubble:nth-child(3){
+        width: 70px;
+        height: 70px;
+        left: -70px;
+        animation-delay: -3.5s;
+    }
+    .bubble:nth-child(4){
+        width: 40px;
+        height: 40px;
+        left: -50px;
+        animation-delay: -5s;
+    }
 }
 
-.bubble:nth-child(3){
-    width: 70px;
-	height: 70px;
-	left: -70px;
-	animation-delay: -3.5s;
+#wrap3{
+    .bubble:nth-child(1){
+        top: 50px;
+        left: 10px;
+        animation-delay: -14s;
+    }
+
+    .bubble:nth-child(2){
+        width: 50px;
+        height: 30px;
+        left: 50px;
+        animation-delay: -16s;
+    }
+
+    .bubble:nth-child(3){
+        width: 70px;
+        height: 70px;
+        left: -70px;
+        animation-delay: -17.5s;
+    }
+    .bubble:nth-child(4){
+        width: 40px;
+        height: 40px;
+        left: -50px;
+        animation-delay: -5s;
+    }
 }
 
-.bubble:nth-child(4){
-    top: 50px;
-	left: 400px;
+#wrap4{
+    .bubble:nth-child(1){
+        top: 50px;
+        left: 10px;
+    }
+
+    .bubble:nth-child(2){
+        width: 50px;
+        height: 30px;
+        left: 50px;
+        animation-delay: -2s;
+    }
+
+    .bubble:nth-child(3){
+        width: 70px;
+        height: 70px;
+        left: -70px;
+        animation-delay: -3.5s;
+    }
+    .bubble:nth-child(4){
+        width: 40px;
+        height: 40px;
+        left: -50px;
+        animation-delay: -5s;
+    }
 }
 
-.bubble:nth-child(5){
-    width: 50px;
-	height: 30px;
-	left: 450px;
-	animation-delay: -2s;
+#wrap5{
+    .bubble:nth-child(1){
+        top: 50px;
+        left: 10px;
+    }
+
+    .bubble:nth-child(2){
+        width: 50px;
+        height: 30px;
+        left: 50px;
+        animation-delay: -2s;
+    }
+
+    .bubble:nth-child(3){
+        width: 70px;
+        height: 70px;
+        left: -70px;
+        animation-delay: -3.5s;
+    }
+    .bubble:nth-child(4){
+        width: 40px;
+        height: 40px;
+        left: -50px;
+        animation-delay: -5s;
+    }
 }
 
-.bubble:nth-child(6){
-    width: 70px;
-	height: 70px;
-	left: 330px;
-	animation-delay: -3.5s;
-}
+#wrap6{
+    .bubble:nth-child(1){
+        top: 50px;
+        left: 10px;
+    }
 
-.bubble:nth-child(7){
-    top: 50px;
-	left: -400px;
-}
+    .bubble:nth-child(2){
+        width: 50px;
+        height: 30px;
+        left: 50px;
+        animation-delay: -2s;
+    }
 
-.bubble:nth-child(8){
-    width: 50px;
-	height: 30px;
-	animation-delay: -2s;
-}
-
-.bubble:nth-child(9){
-    width: 70px;
-	height: 70px;
-	left: -470px;
-	animation-delay: -3.5s;
+    .bubble:nth-child(3){
+        width: 70px;
+        height: 70px;
+        left: -70px;
+        animation-delay: -3.5s;
+    }
+    .bubble:nth-child(4){
+        width: 40px;
+        height: 40px;
+        left: -50px;
+        animation-delay: -5s;
+    }
 }
 
 @keyframes move {
@@ -146,6 +253,31 @@ body {
 
 	100% {
 		border-radius: 50%;
-		transform: translateY(50vh);
+		transform: translateY(60vh);
+	}
+}
+
+@keyframes move2 {
+	0% {
+		border-radius: 50% 75% 32% 40% / 20% 32% 84% 53%;
+		transform: translateY(-60vh);
+	}
+
+	100% {
+		border-radius: 50%;
+		transform: translateY(60vh);
+	}
+}
+
+
+@keyframes move3 {
+	0% {
+		border-radius: 24% 32% 83% 44% / 93% 2% 45% 70%;
+		transform: translateY(-60vh);
+	}
+
+	100% {
+		border-radius: 50%;
+		transform: translateY(60vh);
 	}
 }

@@ -10,17 +10,38 @@ const lavalamp = () => {
           <div class="gooey">
             <div class="bubbleTop"></div>
             <div class="bubbleBot"></div>
-            <div class="bubbleWrapper">
+            <div class="bubbleWrapper" id="wrap1">
               <div class="bubble"></div>
-              <div class="bubble"></div>
-              <div class="bubble"></div>
-            </div>
-            <div class="bubbleWrapper">
               <div class="bubble"></div>
               <div class="bubble"></div>
               <div class="bubble"></div>
             </div>
-            <div class="bubbleWrapper">
+            <div class="bubbleWrapper" id="wrap2">
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+            </div>
+            <div class="bubbleWrapper" id="wrap3">
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+            </div>
+            <div class="bubbleWrapper" id="wrap4">
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+            </div>
+            <div class="bubbleWrapper" id="wrap5">
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+            </div>
+            <div class="bubbleWrapper" id="wrap6">
+              <div class="bubble"></div>
               <div class="bubble"></div>
               <div class="bubble"></div>
               <div class="bubble"></div>
