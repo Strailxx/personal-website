@@ -1,9 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Lavalamp from './components/lavalamp/lavalamp'
+import {DarkModeProvider} from './context/darkmodecontext'
+import Lightswitch from './components/lightswitch/lightswitch'
 
 const App = () => {
   return (
-    <Lavalamp/>
+    <div>
+      <DarkModeProvider>
+        <Lightswitch/>
+        <Lavalamp/>
+      </DarkModeProvider>
+    </div>
+
   )
 }
 

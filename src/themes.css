@@ -1,0 +1,12 @@
+.dark{
+    --bubble-colour: #00ffff;
+    --bg-colour: #000;
+    --gradient-colour: radial-gradient(#001122, #001122, #001122, #00ffff35, #00ffff74);
+    --gooey-bg: #00000070;
+}
+.light{
+    --bubble-colour: #ffff00;
+    --bg-colour: #fff;
+    --gradient-colour: radial-gradient(#ffeedd, #ffeedd, #ffeedd, #ffff0035, #ffff0074);;
+    --gooey-bg: #ffffff70;
+}

@@ -1,56 +1,66 @@
-import React, {useEffect} from 'react'
+import React, {useContext} from 'react'
 import './lavalamp.css'
+import {DarkModeContext} from '../../context/darkmodecontext'
+
+
 
 const lavalamp = () => {
+  const {darkMode} = useContext(DarkModeContext);
   return (
     <div>
-      <div class="glow"></div>
-      <div class="frame">
-        <div class="container">
-          <div class="gooey">
-            <div class="bubbleTop"></div>
-            <div class="bubbleBot"></div>
-            <div class="bubbleWrapper" id="wrap1">
-              <div class="bubble"></div>
-              <div class="bubble"></div>
-              <div class="bubble"></div>
-              <div class="bubble"></div>
+      
+      <div className="glow"></div>
+      <div className="frame">
+        <div className="container">
+          <div className="gooey">
+            <div className="bubbleTop"></div>
+            <div className="bubbleBot"></div>
+            <div className="bubbleWrapper" id="wrap1">
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
             </div>
-            <div class="bubbleWrapper" id="wrap2">
-              <div class="bubble"></div>
-              <div class="bubble"></div>
-              <div class="bubble"></div>
-              <div class="bubble"></div>
+            <div className="bubbleWrapper" id="wrap2">
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
             </div>
-            <div class="bubbleWrapper" id="wrap3">
-              <div class="bubble"></div>
-              <div class="bubble"></div>
-              <div class="bubble"></div>
-              <div class="bubble"></div>
+            <div className="bubbleWrapper" id="wrap3">
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
             </div>
-            <div class="bubbleWrapper" id="wrap4">
-              <div class="bubble"></div>
-              <div class="bubble"></div>
-              <div class="bubble"></div>
-              <div class="bubble"></div>
+            <div className="bubbleWrapper" id="wrap4">
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
             </div>
-            <div class="bubbleWrapper" id="wrap5">
-              <div class="bubble"></div>
-              <div class="bubble"></div>
-              <div class="bubble"></div>
-              <div class="bubble"></div>
+            <div className="bubbleWrapper" id="wrap5">
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
             </div>
-            <div class="bubbleWrapper" id="wrap6">
-              <div class="bubble"></div>
-              <div class="bubble"></div>
-              <div class="bubble"></div>
-              <div class="bubble"></div>
+            <div className="bubbleWrapper" id="wrap6">
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+            </div>
+            <div className="bubbleWrapper" id="wrap7">
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
+              <div className={darkMode ? `bubble bubble-dark` : `bubble bubble-light`}></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   )
 }
 
